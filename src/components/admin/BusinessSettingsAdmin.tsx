@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Building2, Mail, MapPin, Phone, Save, Timer, Hourglass } from 'lucide-react';
+import { Building2, Mail, MapPin, Phone, Save, Timer, Hourglass, type LucideIcon } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import type { BusinessSettings } from '../../lib/types';
 import { PageHeader } from './PageHeader';
@@ -212,7 +212,7 @@ function Field({
   hint,
   disabled,
 }: {
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   label: string;
   value: string;
   onChange: (v: string) => void;
@@ -245,7 +245,7 @@ function PreviewRow({
   label,
   value,
 }: {
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   label: string;
   value: string;
 }) {

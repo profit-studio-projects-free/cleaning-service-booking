@@ -7,6 +7,7 @@ import {
   Sparkles,
   TrendingUp,
   Users,
+  type LucideIcon,
 } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import type { Appointment, Service } from '../../lib/types';
@@ -168,7 +169,7 @@ function Metric({
   hint,
   accent,
 }: {
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   label: string;
   value: number;
   hint?: string;

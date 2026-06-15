@@ -1,4 +1,4 @@
-import { CheckCircle2, Calendar, Clock, MapPin, Mail, Phone, ArrowLeft } from 'lucide-react';
+import { CheckCircle2, Calendar, Clock, MapPin, Mail, Phone, ArrowLeft, type LucideIcon } from 'lucide-react';
 import { format } from 'date-fns';
 import type { BusinessSettings } from '../../lib/types';
 import type { SuccessData } from './Booking';
@@ -96,7 +96,7 @@ function Detail({
   value,
   className,
 }: {
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   label: string;
   value: string;
   className?: string;
